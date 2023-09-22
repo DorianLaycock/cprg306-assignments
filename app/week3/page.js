@@ -1,10 +1,9 @@
 export default function Page() {
     return (
     <main>
-      <h1 className="text-4xl">This is week 3</h1>
-      <p>I will work on the lab</p>
-      <p>And get it done in time for the deadline</p>
-      <a href ="/week2">Week 2</a>
+        <h1>Welcome to week 3.</h1>
+        <p>This is week 3. Behold.</p>
+        <p>{"\n"}I will add the relevant features very soon.</p>
     </main>
     );
-  }
+}
