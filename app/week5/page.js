@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function Page(){
     let dogList = [
@@ -34,11 +35,14 @@ export default function Page(){
     console.log("here");
 
     function handleClick(id) {
-        alert(`Dog id: ${id}`);
-    }
+        alert(`Dog id: ${id}`); // backticks allow us to use ${} to insert variables into strings.
+    }                           // you can also use concatenation for this if you want
 
     return (
         <main>
+            <h1 className="text-4xl">Welcome to week 5.</h1>
+            <p>This is just practice so far, the actual assignment will be done soon.</p>
+            <Link href="/">Homepage</Link>
             <ul className="flex m-2 p-2 border">
                 {dogList.map((dog) => (
                     <li key={dog.id} onClick={() => handleClick(dog.id)}>
