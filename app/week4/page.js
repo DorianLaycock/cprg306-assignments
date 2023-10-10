@@ -11,10 +11,13 @@ const submitFunction = (event) => {
 
 export default function Page() {
     return (
-    <main>
+    <main class="flex justify-center items-center w-screen"> 
+    <div class="text-center"> 
         <h1 className="text-4xl">Welcome to week 4.</h1>
         <p>This is week 4. Behold.</p>
-        <Link href="/">Homepage</Link>
+        <div class="pt-5">
+          <Link class ="block text-red-600" href="/">Homepage</Link>
+        </div>
 
         <form onSubmit="submitFunction(event)">
           <input type="text" name="name" placeholder="Name of the product" />
@@ -22,8 +25,7 @@ export default function Page() {
           <input type="text" name="category" placeholder="Produce" />
           <button type="submit">Submit</button>
         </form>
-
-        
+    </div>
     </main>
     );
 }

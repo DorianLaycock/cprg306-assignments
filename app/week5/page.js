@@ -42,7 +42,9 @@ export default function Page(){
         <main>
             <h1 className="text-4xl">Welcome to week 5.</h1>
             <p>This is just practice so far, the actual assignment will be done soon.</p>
-            <Link href="/">Homepage</Link>
+            <div class = "pt-5">
+                <Link class = "block text-red-600" href="/">Homepage</Link>
+            </div>
             <ul className="flex m-2 p-2 border">
                 {dogList.map((dog) => (
                     <li key={dog.id} onClick={() => handleClick(dog.id)}>
