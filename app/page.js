@@ -8,12 +8,14 @@ export default function Page() {
       <p>Name: Dorian Laycock</p>
       <p>Course Section: CPRG 306 A</p>
       <div class="pt-5">
-        <Link class = "block text-red-600" href ="/week2" >• Week 2</Link>
-        <Link class = "block text-red-600" href ="/week3" >• Week 3</Link>
-        <Link class = "block text-red-600" href ="/week4" >• Week 4</Link>
-        <Link class = "block text-red-600" href ="/week5" >• Week 5</Link>
+        <Link class = "block" href ="/week2" >• Week 2</Link>
+        <Link class = "block text-green-50" href ="/week3" >• Week 3</Link>
+        <Link class = "block text-green-100" href ="/week4" >• Week 4</Link>
+        <Link class = "block text-green-200" href ="/week5" >• Week 5</Link>
+        <Link class = "block text-green-300" href ="/week6" >• Week 6</Link>
       </div>
     </div>
   </main>
   );
 }
+
