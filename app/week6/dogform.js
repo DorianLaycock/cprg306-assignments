@@ -2,7 +2,7 @@
 
 import {useState} from "react";
 
-export default function Dogorm({onSubmit}) {
+export default function Dogform({onSubmit}) {
     const [name, setName] = useState("");
     const [age, setAge] = useState(0);
 

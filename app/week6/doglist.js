@@ -1,4 +1,3 @@
-import {useState} from "react";
 import Dog from "./dog.js";
 
 export default function Doglist({dogs, onDelete}){

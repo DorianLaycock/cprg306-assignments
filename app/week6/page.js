@@ -27,8 +27,8 @@ export default function Page() {
 
   return (
   <main>
-    <DogForm onSubmit ={(dog) => handleSubmit(dog)} />
-    <DogList dogs ={dogs} onDelete = {handleDelete} />
+    <Dogform onSubmit ={(dog) => handleSubmit(dog)} />
+    <Doglist dogs ={dogs} onDelete = {handleDelete} />
   </main>
   );
 }
