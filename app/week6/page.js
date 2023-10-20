@@ -1,34 +1,34 @@
 "use client";
 
 import {useState} from "react";
-import Doglist from "./doglist.js";
-import Dogform from "./dogform.js";
-import Dog from "./dog.js";
+import Itemlist from "./itemlist.js";
+import Itemform from "./itemform.js";
+import Item from "./item.js";
 
-const dogsData = [
-  {name:"Riley", age: 8},
-  {name:"Zoe", age: 6},
-  {name:"Piper", age: 1},
+const itemsData = [
+  {name:"Wine", quantity:4, category:"produce"},
+  {name:"Spaghetti", quantity:7, category:"produce"},
+  {name:"Mozarella", quantity:3, category:"produce"},
 ];
 
 export default function Page() {
 
-  const [dogs, setDogs] = useState(dogsData);
+  const [items, setItems] = useState(itemsData);
 
-  function handleSubmit(dog) {
-    alert(`Adding ${dog.name} who is ${dog.age} years old`);
-    setDogs([...dogs, dog]);
+  function handleSubmit(item) {
+    setItems([...items, item]);
   }
 
   function handleDelete(name){
-    alert(`Deleting ${name}`);
-    setDogs(dogs.filter((dog) => dog.name !== name));
+    setItems(items.filter((item) => item.name !== name));
   }
 
   return (
-  <main>
-    <Dogform onSubmit ={(dog) => handleSubmit(dog)} />
-    <Doglist dogs ={dogs} onDelete = {handleDelete} />
+  <main class="flex justify-center items-center w-screen">
+    <div class="text-left">
+      <Itemform onSubmit ={(item) => handleSubmit(item)} />
+      <Itemlist items ={items} onDelete = {handleDelete} />
+    </div>
   </main>
   );
 }
