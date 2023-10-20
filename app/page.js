@@ -13,6 +13,7 @@ export default function Page() {
         <Link class = "block text-green-100" href ="/week4" >• Week 4</Link>
         <Link class = "block text-green-200" href ="/week5" >• Week 5</Link>
         <Link class = "block text-green-300" href ="/week6" >• Week 6</Link>
+        <Link class = "block text-green-400" href ="/week7" >• Week 7</Link>
       </div>
     </div>
   </main>
