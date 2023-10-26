@@ -1,6 +1,6 @@
 "use client";
 
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import Itemlist from "./itemlist.js";
 import Itemform from "./itemform.js";
 import Item from "./item.js";
@@ -15,7 +15,7 @@ export default function Page() {
 
   const [items, setItems] = useState(itemsData);
 
-  function handleSubmit(item) {
+  function handleSubmit(item){
     setItems([...items, item]);
   }
 
@@ -24,8 +24,8 @@ export default function Page() {
   }
 
   return (
-  <main class="flex justify-center items-center w-screen">
-    <div class="text-left">
+  <main class="">
+    <div class="">
       <Itemform onSubmit ={(item) => handleSubmit(item)} />
       <Itemlist items ={items} onDelete = {handleDelete} />
     </div>
