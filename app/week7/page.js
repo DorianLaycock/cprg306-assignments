@@ -24,9 +24,16 @@ export default function Page() {
   }
 
   return (
-  <main class="">
-    <div class="">
-      <Itemform onSubmit ={(item) => handleSubmit(item)} />
+  <main>
+    <div className="flex flex-row border border-white">
+      <div className="flex basis-1/3 w-150">
+        <Itemform onSubmit ={(item) => handleSubmit(item)} />
+      </div>
+      <div className="flex basis-1/3 justify-center border border-white">
+        Meal Ideas
+      </div>
+    </div>
+    <div>
       <Itemlist items ={items} onDelete = {handleDelete} />
     </div>
   </main>
