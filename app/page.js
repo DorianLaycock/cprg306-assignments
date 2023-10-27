@@ -14,6 +14,7 @@ export default function Page() {
         <Link class = "block text-green-200" href ="/week5" >• Week 5</Link>
         <Link class = "block text-green-300" href ="/week6" >• Week 6</Link>
         <Link class = "block text-green-400" href ="/week7" >• Week 7</Link>
+        <Link class = "block text-green-500" href ="/week8" >• Week 8</Link>
       </div>
     </div>
   </main>

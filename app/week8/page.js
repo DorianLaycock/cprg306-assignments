@@ -1,3 +1,5 @@
+//Got as far as part 5 for week 8 assignment. Continue working later.
+
 "use client";
 
 import Link from "next/link";
