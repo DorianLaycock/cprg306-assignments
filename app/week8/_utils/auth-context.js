@@ -24,7 +24,7 @@ export const AuthContextProvider = ({ children }) => {
   };
  
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => { //apparently this causes an error and I don't know why. Gotta look into it.
       setUser(currentUser);
     });
     return () => unsubscribe();

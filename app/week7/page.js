@@ -14,7 +14,7 @@ const itemsData = [
 
 async function fetchRecipe(){
   try {
-    response = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}");
+    response = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=${recipe}");
     const data = await response.json();
     return data.message;
   } catch (error){
@@ -59,7 +59,14 @@ export default function Page() {
         <Itemform onSubmit ={(item) => handleSubmit(item)} />
       </div>
       <div className="flex basis-1/3 justify-center border border-white"> 
-        Meal Ideas {/* https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient} API will be integrated with this section */}
+      <p>
+        Placeholder for recipe
+      </p>
+        {/* <select name = "recipes">
+          {Object.keys(recipes).map((recipe) => (
+            <option key={recipe}>{recipe}</option>
+            ))}
+        </select> */}
       </div>
     </div>
     <div>

@@ -46,10 +46,6 @@ export default function Page() {
     setItems(items.filter((item) => item.name !== name));
   } 
 
-  function handleSearch(name){
-    //What to put here? 
-  }
-
   return (
   <main>
     <div className="flex flex-col justify-center items-center w-screen">
